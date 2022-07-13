@@ -4,7 +4,7 @@
 This is a MobileNetV2-based cars recognition (Stanford Cars-196 Dataset classification)
 
 
-There are several criteria of work:
+There are several important criteria of work:
 
 * Accuracy
 
@@ -35,7 +35,7 @@ In my work I used PyTorch-implemented (torchvision.models) pre-trained MobileNet
 
 All layers was fine-tuned and the last layer was replased (changing classifier output-size)
 
-Also, i used:
+Also, I used:
 
 * Cross-Entropy loss
 * Adam optimizer (with L2-penalty)
@@ -45,7 +45,7 @@ The model has been trained for 10 epochs.
 Final score: **0.8486 Accuracy**
 
 ## Grad-CAM
-Also, [Grad-CAM](https://github.com/frgfm/torch-cam?ysclid=l5k0ej29tm554836498) (Gradient-weighted Class Activation Heatmap) was used for MobileNetV2 class activation exploration - overlay visualization. 
+Finally, [Grad-CAM](https://github.com/frgfm/torch-cam?ysclid=l5k0ej29tm554836498) (Gradient-weighted Class Activation Heatmap) was used for MobileNetV2 class activation exploration - overlay visualization. 
 
 <img width="895" alt="image" src="https://user-images.githubusercontent.com/69139386/178817486-10d9236f-c759-43e6-ab89-f8449bbff7ff.png">
 
