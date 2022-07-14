@@ -10,7 +10,7 @@ There are several important criteria of work:
 
 * Speed & lightweight
 
-Thus, the classifier based on Mobile Net V2 was chosen because of its small number of parameters, small size and the ability to recognize almost real-time based on mobile devices.
+Thus, the classifier based on MobileNetV2 was chosen because of its small number of parameters, small size and the ability to recognize almost real-time based on mobile devices.
 
 <img src="https://user-images.githubusercontent.com/69139386/178808525-61f546ac-6747-469e-8596-537e1b31ea04.png" width="500">
 
@@ -31,11 +31,11 @@ Despite the large size, the number of images for each class is relatively small 
 
 ## Training 
 
-In my work I used PyTorch-implemented (torchvision.models) pre-trained MobileNetV2 with transfer learning. 
+In my work I've used PyTorch-implemented (torchvision.models) pre-trained MobileNetV2 with transfer learning. 
 
-All layers was fine-tuned and the last layer was replased (changing classifier output-size)
+All layers was fine-tuned and the last layer was replaced (changing classifier output-size)
 
-Also, I used:
+Also, I've used:
 
 * Cross-Entropy loss
 * Adam optimizer (with L2-penalty)
